@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoLocalized" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4S-6S-Zet">
+                                <rect key="frame" x="8" y="244.5" width="359" height="179.5"/>
+                                <string key="text">An attack that shocked the world – at least 33 children killed in rebel-held northern Yemen when an air strike by the Saudi-led coalition hit their school bus. The coalition intervened in 2015 to support the internationally recognised government against Houthi rebels, who are allied with Iran.Many civilian deaths in Yemen go unreported but with rare footage from the ground, Orla Guerin tells the story of a school trip that ended in disaster, and the children and families still reeling in the aftermath.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBp-Un-gCw">
+                                <rect key="frame" x="107" y="464" width="160" height="30"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="kAj-eD-DtD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnOpenGallery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hbF-Hr-f0c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79674020888744024" green="0.9171225025217381" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yBp-Un-gCw" firstAttribute="centerX" secondItem="i4S-6S-Zet" secondAttribute="centerX" id="0C7-Cu-bIR"/>
+                            <constraint firstItem="i4S-6S-Zet" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="C0b-YF-5qA"/>
+                            <constraint firstItem="yBp-Un-gCw" firstAttribute="top" secondItem="i4S-6S-Zet" secondAttribute="bottom" constant="40" id="cwx-pc-kUk"/>
+                            <constraint firstItem="i4S-6S-Zet" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="e4g-Ey-Db0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i4S-6S-Zet" secondAttribute="trailing" constant="8" id="uXk-N7-Uyw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnOpenGallery" destination="yBp-Un-gCw" id="cG9-W4-sg2"/>
+                        <outlet property="lbContent" destination="i4S-6S-Zet" id="f9u-3K-Qr5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
